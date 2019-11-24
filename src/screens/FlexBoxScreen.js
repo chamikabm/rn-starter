@@ -16,11 +16,14 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 2,
     borderColor: 'black',
+    flexDirection: 'row',
+    height: 100,
+    justifyContent: 'space-around',
   },
   textStyle: {
     borderWidth: 1,
     borderColor: 'red',
-    margin: 10,
+    flex: 1,
   }
 });
 
