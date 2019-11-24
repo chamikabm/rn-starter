@@ -86,6 +86,13 @@ const HomeScreen = (props) => {
             }}
             title={'Go to Flex Demo'}
         />
+        <Button
+            onPress={() => {
+              console.log('Position Button Pressed!');
+              props.navigation.navigate('Position');
+            }}
+            title={'Go to Position Demo'}
+        />
         {/*<TouchableOpacity*/}
         {/*    onPress={() => {*/}
         {/*      console.log('List Pressed!');*/}
