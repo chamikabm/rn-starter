@@ -44,6 +44,13 @@ const HomeScreen = (props) => {
             }}
             title={'Go to Color Demo'}
         />
+        <Button
+            onPress={() => {
+              console.log('Square Button Pressed!');
+              props.navigation.navigate('Square');
+            }}
+            title={'Go to Square Demo'}
+        />
         {/*<TouchableOpacity*/}
         {/*    onPress={() => {*/}
         {/*      console.log('List Pressed!');*/}
