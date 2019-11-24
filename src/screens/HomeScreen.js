@@ -11,26 +11,36 @@ const HomeScreen = (props) => {
         <Text style={styles.text}>Hello World!</Text>
         <Button
             onPress={() => {
-              console.log('Button Pressed!');
+              console.log('Components Button Pressed!');
               props.navigation.navigate('Components');
             }}
             title={'Go to Components Demo'}
         />
-        <TouchableOpacity
+        <Button
             onPress={() => {
-              console.log('List Pressed!');
+              console.log('List Button Pressed!');
               props.navigation.navigate('List');
             }}
-        >
-          <Text>Go to List Demo</Text>
-        </TouchableOpacity>
+            title={'Go to List Demo'}
+        />
+        {/*<TouchableOpacity*/}
+        {/*    onPress={() => {*/}
+        {/*      console.log('List Pressed!');*/}
+        {/*      props.navigation.navigate('List');*/}
+        {/*    }}*/}
+        {/*>*/}
+        {/*  <Text>Go to List Demo</Text>*/}
+        {/*</TouchableOpacity>*/}
       </View>
   );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: 'center',
+    marginTop: 30,
+    marginBottom: 10,
   }
 });
 
