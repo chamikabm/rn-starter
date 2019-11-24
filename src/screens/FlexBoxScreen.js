@@ -5,9 +5,9 @@ const FlexBoxScreen = () => {
 
   return (
       <View style={styles.viewStyle}>
-        <Text style={styles.textStyle}>Child #1</Text>
-        <Text style={styles.textStyle}>Child #2</Text>
-        <Text style={styles.textStyle}>Child #3</Text>
+        <Text style={styles.textStyleOne}>Child #1</Text>
+        <Text style={styles.textStyleTwo}>Child #2</Text>
+        <Text style={styles.textStyleThree}>Child #3</Text>
       </View>
   );
 };
@@ -16,14 +16,30 @@ const styles = StyleSheet.create({
   viewStyle: {
     borderWidth: 2,
     borderColor: 'black',
-    flexDirection: 'row',
+    flexDirection: 'column',
     height: 100,
     justifyContent: 'space-around',
+    backgroundColor: 'yellow',
   },
-  textStyle: {
+  textStyleOne: {
     borderWidth: 1,
     borderColor: 'red',
     flex: 1,
+    backgroundColor: 'orange',
+  },
+  textStyleTwo: {
+    borderWidth: 1,
+    borderColor: 'red',
+    flex: 1,
+    alignSelf: 'center',
+    minWidth: 250,
+    backgroundColor: 'gray',
+  },
+  textStyleThree: {
+    borderWidth: 1,
+    borderColor: 'red',
+    flex: 1,
+    backgroundColor: 'pink'
   }
 });
 
